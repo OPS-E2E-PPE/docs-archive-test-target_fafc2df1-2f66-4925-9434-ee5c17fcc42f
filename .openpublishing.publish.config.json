@@ -6,6 +6,9 @@
       "build_output_subfolder": "E2EArchiveTarget_89f826cc-fbf7-404a-9816-3cb3f4b89203",
       "locale": "en-us",
       "monikers": [],
+      "xref_query_tags": [
+        "/versioningArchiveTestSource"
+      ],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content"
@@ -20,17 +23,23 @@
   "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
+  "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
+  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "main",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "versioningArchiveTargetFolder\\_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft",
+      "branch": "main",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {},
-  "skip_source_output_uploading": false,
-  "contribution_branch_mappings": {},
   "need_generate_pdf_url_template": false
 }

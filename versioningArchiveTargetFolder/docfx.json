@@ -1,17 +1,119 @@
 {
   "build": {
     "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "non-version/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices.md"
+        ],
+        "src": "sql-server-2014",
+        "group": "grp-sql-server-2014"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices.md"
+        ],
+        "src": "sql-server-2014/non-version",
+        "dest": "non-v",
+        "group": "grp-sql-server-2014"
+      }
     ],
     "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "non-version/**"
+        ],
+        "src": "sql-server-2014",
+        "group": "grp-sql-server-2014"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**"
+        ],
+        "src": "sql-server-2014/non-version",
+        "dest": "non-v",
+        "group": "grp-sql-server-2014"
+      }
     ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "feedback_system": "Standard"
+      "feedback_system": "Standard",
+      "breadcrumb_path": "/versioningArchiveTestSource/breadcrumb/toc.json",
+      "extendBreadcrumb": true,
+      "docs_archive": "tool",
+      "uhfHeaderId": "MSDocsHeader-Archive"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "breadcrumb_path": {
+        "sql-server-2014/**/*.md": "/DocsE2EVersioningArchiveTarget/breadcrumb/E2EArchiveTarget_89f826cc-fbf7-404a-9816-3cb3f4b89203/toc.json",
+        "sql-server-2014/**/*.yml": "/DocsE2EVersioningArchiveTarget/breadcrumb/E2EArchiveTarget_89f826cc-fbf7-404a-9816-3cb3f4b89203/toc.json"
+      },
+      "replace_monikers": {
+        "sql-server-2014/**/*.*": [
+          "sql-server-2014"
+        ]
+      },
+      "tilde_path": {
+        "sql-server-2014/**/*.*": "sql-server-2014"
+      }
+    },
     "template": [],
-    "dest": "archive-template",
-    "markdownEngineName": "markdig"
+    "markdownEngineName": "markdig",
+    "groups": {
+      "monikers": {
+        "dest": "temp2016a",
+        "moniker_range": "sql-server-2014 || azuresqldb-current || azuresqldb-mi-current || azure-sqldw-latest || >= aps-pdw-2016 || >= sql-server-2016 || >= sql-server-linux-2017 || sql-server-previousversions || sqlallproducts-allversions"
+      },
+      "grp-sql-server-2014": {
+        "moniker_range": "sql-server-2014"
+      }
+    },
+    "dest": "archive-template"
   }
 }

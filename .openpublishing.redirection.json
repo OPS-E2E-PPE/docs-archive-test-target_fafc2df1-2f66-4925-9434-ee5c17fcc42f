@@ -1,0 +1,11 @@
+{
+  "redirections": [
+    {
+      "source_path": "versioningArchiveTargetFolder/sql-server-2014/index.md",
+      "redirect_url": "/versioningArchiveTestSource/index?view=sql-server-2014",
+      "monikers": [
+        "sql-server-2014"
+      ]
+    }
+  ]
+}
